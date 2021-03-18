@@ -36,7 +36,10 @@ export function twoSumBruteForce(
  * @param target number to which two `nums` values must sum.
  * @returns tuple containing the indeces of the two numbers that sum to the target, or void.
  */
-export function twoSum(nums: number[], target: number): number[] | void {
+export function twoSum(
+  nums: number[],
+  target: number
+): [number, number] | void {
   const complements = new Map<number, number>();
 
   for (const [index, value] of nums.entries()) {
